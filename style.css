@@ -17,11 +17,37 @@ body {
   width: 100vmin;
   height: 100vmin;
   display: grid;
-  grid-template-rows: repeat(22, 1fr);
-  grid-template-columns: repeat(16, 1fr);
-  background-color: #8cafff;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+  
 }
 
 .ground {
   background: url("/imgs/ground.png") 0 0 / cover no-repeat;
+ /* outline: solid 2px red; */
+}
+
+.grass {
+  background: url("/imgs/grass.png") 0 0 / cover no-repeat;
+}
+
+.rock {
+  background: url("/imgs/rock.png") 0 0 / cover no-repeat;
+}
+
+.leaves {
+  background: url("/imgs/leaves.png") 0 0 / cover no-repeat;
+}
+
+.trunk {
+  background: url("/imgs/Oak_Log.webp") 0 0 / cover no-repeat;
+}
+
+.sky {
+  background-color: #8cafff;
+  /* outline: solid 2px red; */
+}
+
+.cloud {
+  background-color: rgb(249, 240, 240);
 }
