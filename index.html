@@ -4,13 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="game.js">
+    <link rel="stylesheet" href="style.css" />
     <title>Minecraft 2D</title>
     <script src="game.js" defer type="module"></script>
   </head>
   <body>
     <div id="game-board"></div>
-    <div id="tool-box"></div>
+    <div id="tool-box">
+      <div class="axe tool" name="axe">
+        axe
+        <div class="axe-img img" name="axe"></div>
+      </div>
+      <div class="pickaxe tool" name="pickaxe">
+        pickaxe
+        <div class="pickaxe-img img" name="pickaxe"></div>
+      </div>
+      <div class="shovel tool" name="shovel">
+        shovel
+        <div class="shovel-img img" name="shovel"></div>
+
+        <div class="inventory">
+          <div class="trunk tool">Wood <span id="woodCount"></span></div>
+          <div class="rock tool">Rocks <span id="rockCount"></span></div>
+          <div class="ground tool">Soil <span id="groundCount"></span></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

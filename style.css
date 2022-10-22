@@ -1,9 +1,15 @@
+@font-face {
+  font-family: Minecraftia-Reg;
+  src: url(/fonts/Minecraftia-Regular.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "VT323", monospace;
 }
+
 body {
   height: 100vh;
   width: 100vw;
@@ -11,20 +17,44 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: black;
+  background-color: black;  
 }
+
 #game-board {
   width: 100vmin;
   height: 100vmin;
   display: grid;
   grid-template-rows: repeat(18, 1fr);
   grid-template-columns: repeat(18, 1fr);
-  
+}
+
+#start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(/imgs/startScreen.png) no-repeat center center / cover;
+  /* position: absolute; */
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.btn {
+  background-color: #8b8b8b;
+  padding: 10px 30px;
+  color: white;
+  text-shadow: #141414;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 0px 2px #a0a0a0, inset 0px 10px 27px -8px #141414;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .ground {
   background: url("/imgs/ground.png") 0 0 / cover no-repeat;
- /* outline: solid 2px red; */
 }
 
 .grass {
@@ -45,9 +75,64 @@ body {
 
 .sky {
   background-color: #8cafff;
-  /* outline: solid 2px red; */
 }
 
 .cloud {
   background-color: rgb(249, 240, 240);
+}
+
+.tool {
+  background: 3px solid transparent;
+  height: 16.5vmin;
+  width: 15vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0.5rem;
+  border: 2px solid transparent;
+  background-color: #8b8b8b;
+  box-shadow: 0px 0px 0px 2px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.img {
+  height: 7vmin;
+  width: 7vmin;
+  margin: 1rem 0;
+}
+
+.shovel-img {
+  background: url("/imgs/shovel.png") center center / cover no-repeat;
+}
+
+.axe-img {
+  background: url("/imgs/axe.png") center center / cover no-repeat;
+}
+
+.pickaxe-img {
+  background: url("/imgs/pickaxe.png") center center / cover no-repeat;
+}
+
+ .inventory {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10vmin;
+  height: 10vmin;
+  top: 100px;
+  left: 10px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+span {
+  width: 40px;
+  height: 40px;
 }
