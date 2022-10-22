@@ -18,3 +18,7 @@
 
 //------TODO-----//
 add the minecraft font
+add counters to spans
+add start function
+add reset function
+add option to return last material
